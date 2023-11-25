@@ -9,7 +9,7 @@ class Component<T> {
 interface PageProps {
   title: string;
 }
-class Page<T extends PageProps> extends Component<T> {
+class Page extends Component<PageProps> {
   pageInfo() {
     console.log(this.props.title);
   }
